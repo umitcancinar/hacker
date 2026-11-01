@@ -21,7 +21,7 @@ async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
 export const getProducers = cache(async (): Promise<Producer[]> =>
   safe(async () => {
     const rows = await prisma.producer.findMany({
-      where: { published: true },
+      where: { published: true, demo: true },
       orderBy: { sortOrder: "asc" },
     });
     return rows.length ? rows.map(toProducer) : staticProducers;

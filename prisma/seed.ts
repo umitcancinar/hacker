@@ -53,7 +53,7 @@ async function main() {
   await seedCopy();
   const homeCopy = [
     { key: "home.producers.title", group: "home", tr: "Şekeri yapan eller", en: "The hands behind the candy" },
-    { key: "home.producers.lead", group: "home", tr: "Kapalı Çarşı’dan kooperatife: sekiz üretici, kendi hikâyeleri, ürünleri ve adresleriyle.", en: "From the covered bazaar to the cooperative: eight makers, with their stories, products and addresses." },
+    { key: "home.producers.lead", group: "home", tr: "Elazığ’ın ikram kültüründen esinlenen sekiz kurgusal işletme; özgün hikâyeleri ve temsili ürün sunumlarıyla.", en: "Eight fictional businesses inspired by Elazığ’s serving traditions, with original stories and illustrative product presentations." },
     { key: "home.discover.title", group: "home", tr: "Şeker yolundan Elazığ’a.", en: "From the candy trail to Elazığ." },
     { key: "home.gallery.title", group: "home", tr: "Duvarda ne var?", en: "What hangs on the wall?" },
     { key: "home.assistant.title", group: "home", tr: "Gakkocan’a sor.", en: "Ask Gakkocan." },

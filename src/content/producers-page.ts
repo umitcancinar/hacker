@@ -39,13 +39,13 @@ export const producersPage: Record<Locale, ProducersPageContent> = {
     viewProducer: "Üreticiyi gör",
     empty: {
       title: "Üreticiler çok yakında burada",
-      body: "Elazığ'da badem şekeri yapan ve satan işletmeleri doğrulanmış bilgileriyle ekliyoruz. Listede yer almak isterseniz bize yazın.",
+      body: "GakCoding için hazırlanan kurgusal işletme hikâyeleri burada sergilenir. Projeye bir içerik önerisi gönderebilirsiniz.",
       cta: "Listeye katılın",
     },
     demoNote:
-      "Aşağıdaki kayıtlar yerleşimi göstermek için hazırlanmış örnek içeriktir; gerçek üreticiler eklendikçe yerini alacak.",
+      "Bu işletmelerin adları, hikâyeleri ve ürün sunumları GakCoding için kurgulanmıştır; gerçek kişi veya işletmeleri temsil etmez. Satış ve ödeme yapılmaz.",
     guideNote:
-      "Kayıtlar Gacker takımının Elazığ badem şekeri üretici rehberinden derlenmiştir. Patent, tescil ve çalışma iddiaları işletmenin kendi anlatımıdır; gitmeden önce teyit edin.",
+      "İşletme kayıtları proje için hazırlanmış kurgusal örneklerdir. Gerçek firma, patent, tescil veya satış iddiası içermez.",
     branches: "Şubeler",
     imageCredit: "Temsili görsel — yapay zekâ ile üretilmiştir; işletmenin kendi fotoğrafı değildir.",
     detail: {
@@ -58,7 +58,7 @@ export const producersPage: Record<Locale, ProducersPageContent> = {
       hours: "Çalışma saatleri",
       products: "Ürünler",
       links: "Çevrim içi",
-      noContact: "İletişim bilgileri yakında eklenecek.",
+      noContact: "Bu kurgusal işletmenin gerçek adresi, telefonu veya satış kanalı bulunmaz.",
       socials: {
         website: "Web sitesi",
         instagram: "Instagram",
@@ -76,13 +76,13 @@ export const producersPage: Record<Locale, ProducersPageContent> = {
     viewProducer: "View producer",
     empty: {
       title: "Producers are coming soon",
-      body: "We are adding the businesses that make and sell almond candy in Elazığ, with verified details. If you would like to be listed, write to us.",
+      body: "Fictional business stories created for GakCoding are presented here. You can send a content suggestion to the team.",
       cta: "Join the list",
     },
     demoNote:
-      "The entries below are sample content prepared to show the layout; real producers will replace them as they are added.",
+      "These business names, stories and product presentations were created for GakCoding and do not represent real people or businesses. No sales or payments are offered.",
     guideNote:
-      "Records are compiled from Team Gacker’s Elazığ almond-candy producer guide. Patent, registration and process claims are the firms’ own accounts; confirm before you visit.",
+      "Business records are fictional examples for this project. They do not claim a real company identity, patent, registration or sale.",
     branches: "Branches",
     imageCredit: "Editorial still — generated with AI; not a photograph of the business.",
     detail: {
@@ -95,7 +95,7 @@ export const producersPage: Record<Locale, ProducersPageContent> = {
       hours: "Opening hours",
       products: "Products",
       links: "Online",
-      noContact: "Contact details will be added soon.",
+      noContact: "This fictional business has no real address, telephone or sales channel.",
       socials: {
         website: "Website",
         instagram: "Instagram",

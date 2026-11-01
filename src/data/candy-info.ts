@@ -24,6 +24,19 @@ export type CandyFact = {
 };
 
 export const candyFacts: CandyFact[] = [
+  {
+    id: "what-elazig-cherry", category: "what",
+    title: { tr: "Elazığ’da vişneli yorum", en: "The sour-cherry interpretation in Elazığ" },
+    body: { tr: "GakCoding konu belgesinde Elazığ’da özellikle vişneli badem şekerinin bilindiği anlatılır: vişne, badem şekerine meyvemsi ve mayhoş bir yorum katar. Buradaki ürün sunumları proje için tasarlanmıştır; gerçek bir firmanın reçetesini veya ürününü temsil etmez.", en: "The GakCoding brief highlights Elazığ’s sour-cherry almond candy, bringing a fruity, tart interpretation to the confection. Product presentations here were designed for the project, not to represent a real company’s recipe or product." },
+    source: "GakCoding konu belgesi — Badem Şekeri, s. 1", sourceUrl: "/sources/gakcoding-badem-sekeri.pdf",
+  },
+  {
+    id: "what-elazig-lemon", category: "what",
+    title: { tr: "Limonlu denemeler", en: "Lemon-flavoured explorations" },
+    body: { tr: "Konu belgesi, haberlerde Elazığ’da limonlu gibi yeni badem şekeri çeşitlerinin denendiğini aktarır. Bu, bir yenilik örneğidir; belirli bir işletmenin patenti, tek üretim hakkı veya bütün ürünlerde aynı içerik olduğu iddiası değildir.", en: "The subject brief notes news reports of new almond-candy varieties, including lemon, being explored in Elazığ. This illustrates innovation, not a claim to a particular business’s patent, exclusive production rights or a uniform recipe." },
+    source: "GakCoding konu belgesi — Badem Şekeri, s. 1", sourceUrl: "/sources/gakcoding-badem-sekeri.pdf",
+  },
+
   // ───────────── NEDİR (what) ─────────────
   {
     id: "what-definition",
@@ -87,8 +100,8 @@ export const candyFacts: CandyFact[] = [
     category: "making",
     title: { tr: "El emeği ve süre (usta beyanı)", en: "Craft and time (master's account)" },
     body: {
-      tr: "Aynı haberde Elazığlı ustalar, badem şekerinin el emeğiyle yaklaşık 3 saatte hazırlandığını söylüyor. Usta Erkan Süslü'ye göre iyi bir badem şekerinde şeker tabakası ince ve gevrek olmalı ve bu gevreklik usta eliyle verilir. Bunlar ustaların kendi anlatımıdır; her ustanın şekeri birbirinin aynısı değildir.",
-      en: "In the same report, Elazığ masters say badem şekeri takes about 3 hours of hand work. Master Erkan Süslü says a good one needs a thin, crisp sugar layer, which comes from the master's hand. These are the masters' own accounts, and no two masters' candy is exactly alike.",
+      tr: "Aynı haberde Elazığlı ustalar, badem şekerinin el emeğiyle yaklaşık 3 saatte hazırlandığını söylüyor. Haberde görüşülen bir ustaya göre iyi bir badem şekerinde şeker tabakası ince ve gevrek olmalı ve bu gevreklik usta eliyle verilir. Bunlar ustaların kendi anlatımıdır; her ustanın şekeri birbirinin aynısı değildir.",
+      en: "In the same report, Elazığ masters say badem şekeri takes about 3 hours of hand work. A maker interviewed in the report says a good one needs a thin, crisp sugar layer, which comes from the master's hand. These are the masters' own accounts, and no two masters' candy is exactly alike.",
     },
     source: "NTV / Anadolu Ajansı — Elazığ'ın yöresel lezzeti badem şekeri ramazanda damakları tatlandırıyor (25.04.2021)",
     sourceUrl: "https://www.ntv.com.tr/yasam/elazigin-yoresel-lezzeti-badem-sekeri-ramazanda-damaklari-tatlandiriyor,ejVt3w2upk2SoYWsLudOPQ",
@@ -131,13 +144,13 @@ export const candyFacts: CandyFact[] = [
   {
     id: "culture-elazig-geographical-indication",
     category: "culture",
-    title: { tr: "Coğrafi işaret çalışması", en: "Geographical indication effort" },
+    title: { tr: "Başvuru, tescil değildir", en: "An application is not registration" },
     body: {
-      tr: "Elazığ Hakimiyet Haber'deki bir yazıya göre Elazığ Ticaret ve Sanayi Odası'nın coğrafi ürünler komisyonu, \"Badem Şekeri\" için de çalışma başlatmıştır. Çalışma başlamış olması, ürünün tescilli olduğu anlamına gelmez; güncel durum için TÜRKPATENT kayıtlarına bakılmalıdır.",
-      en: "According to a piece in the local paper Elazığ Hakimiyet Haber, the Elazığ Chamber of Commerce and Industry's geographical-products commission has started work on \"Badem Şekeri\" as well. Starting work does not mean it is registered; check TÜRKPATENT records for the current status.",
+      tr: "GakCoding konu belgesi, Vişneli Badem Şekeri için C2026/000095 numaralı 2026 başvurusunu belirtir ve ürünü tescilli olarak tanımlamaz. Başvuru, coğrafi işaret tescili veya patent hakkı anlamına gelmez. Güncel durum TÜRKPATENT Coğrafi İşaretler Portalı’ndan kontrol edilmelidir; bu sitede coğrafi işaret amblemi kullanılmaz.",
+      en: "The GakCoding subject brief cites the 2026 application C2026/000095 for sour-cherry almond candy and does not describe the product as registered. An application does not establish geographical-indication registration or a patent. Check the TÜRKPATENT portal for current status; this site uses no geographical-indication emblem.",
     },
-    source: "Elazığ Hakimiyet Haber — Komisyon çalışıyor",
-    sourceUrl: "https://www.elazighakimiyethaber.com/komisyon-calisiyor/51145/",
+    source: "GakCoding konu belgesi — Badem Şekeri, s. 1; güncel durum: ci.turkpatent.gov.tr",
+    sourceUrl: "/sources/gakcoding-badem-sekeri.pdf",
   },
 
   // ───────────── SAĞLIK (health) — yalnızca genel, kaynaklı beslenme bilgisi ─────────────

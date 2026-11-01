@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
+import type { Prisma } from "@/generated/prisma";
 import { requireAdmin } from "@/lib/admin/session";
 import { siteCopyKeys } from "@/lib/cms/site-copy";
 
@@ -246,9 +247,10 @@ export async function deleteIdentify(formData: FormData) {
 export async function saveQuiz(formData: FormData) {
   await guard();
   const id = text(formData, "id");
-  let options: unknown = [];
+  let options: Prisma.InputJsonValue = [];
   try {
-    options = JSON.parse(text(formData, "options") || "[]");
+    const parsed: unknown = JSON.parse(text(formData, "options") || "[]");
+    options = Array.isArray(parsed) ? parsed : [];
   } catch {
     options = [];
   }

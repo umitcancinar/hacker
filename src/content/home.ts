@@ -61,8 +61,8 @@ export const stage: {
 export const producers = {
   title: { tr: "Şekeri yapan eller", en: "The hands behind the candy" } as L<string>,
   lead: {
-    tr: "Kapalı Çarşı’dan kooperatife: sekiz üretici, kendi hikâyeleri, ürünleri ve adresleriyle.",
-    en: "From the covered bazaar to the cooperative: eight makers, with their stories, products and addresses.",
+    tr: "Elazığ’ın ikram kültüründen esinlenen sekiz kurgusal işletme; özgün hikâyeleri ve temsili ürün sunumlarıyla.",
+    en: "Eight fictional businesses inspired by Elazığ’s serving traditions, with original stories and illustrative product presentations.",
   } as L<string>,
   cta: { tr: "Tüm üreticiler", en: "All producers" } as L<string>,
   open: { tr: "Tanışın", en: "Meet them" } as L<string>,
@@ -71,8 +71,8 @@ export const producers = {
   next: { tr: "Sonraki üreticiler", en: "Next producers" } as L<string>,
   emptyTitle: { tr: "Eller sofraya hazırlanıyor.", en: "The hands are getting ready." } as L<string>,
   emptyBody: {
-    tr: "Üreticilerin doğrulanmış bilgileri eklendikçe burada belirecek.",
-    en: "Producers will appear here as their verified details are added.",
+    tr: "Proje için hazırlanan kurgusal işletme hikâyeleri burada yer alır.",
+    en: "Fictional business stories created for this project appear here.",
   } as L<string>,
 };
 

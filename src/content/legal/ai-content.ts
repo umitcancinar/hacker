@@ -18,7 +18,7 @@ const tr: LegalDoc = {
             "Hero videosu, üretici/ürün kartlarındaki temsili stiller, hikâye ve galeri görselleri ile site maskotu (Gakkocan) üretken yapay zekâ araçlarıyla üretilmiş veya yapay zekâ yardımıyla hazırlanmıştır. Bunlar belirli bir işletmenin, kişinin veya ürünün fotoğrafı değildir; temsilî görseldir.",
             "Sitedeki sohbet asistanı üretken bir yapay zekâ modeliyle çalışır ve yanıtları otomatik üretilir ({{page:kullanim-kosullari}}).",
             "Site tasarımı ve yazılımı geliştirilirken yapay zekâ destekli geliştirme araçlarından yararlanılmıştır; içerik ve çıktılar takım üyelerince gözden geçirilmiştir.",
-            "Gerçek üretici adları, adresleri ve hikâyeleri takımın Elazığ badem şekeri üretici rehberinden derlenir; yapay zekâ ile uydurulmaz. Patent, tescil ve süreç iddiaları işletmenin kendi anlatımı olarak sunulur. Doğrulanmamış kayıtlar “örnek içerik” olarak etiketlenir.",
+            "İşletme adları ve hikâyeleri etkinlik için özgün olarak kurgulanmıştır; gerçek kişi veya işletmeleri temsil etmez. Kayıtlar “örnek içerik” olarak etiketlenir. Gerçek firma logosu, satış bağlantısı veya coğrafi işaret amblemi kullanılmaz.",
           ],
         },
         {
@@ -98,7 +98,7 @@ const tr: LegalDoc = {
       blocks: [
         {
           type: "p",
-          text: "Keşfet ve hikâye bölümlerindeki bilgiler, ilgili kayıtlarda bağlantısı verilen kamuya açık kaynaklara (ör. Vikipedi, TÜRKPATENT coğrafi işaret kayıtları, haber ve kurum sayfaları) dayanır ve kendi ifademizle yazılmıştır. Üretici listesi takımın Elazığ badem şekeri üretici rehberinden derlenmiştir. Vikipedi'den alınan bilgiler CC BY-SA lisanslıdır.",
+          text: "Keşfet ve hikâye bölümlerindeki bilgiler, ilgili kayıtlarda bağlantısı verilen kamuya açık kaynaklara (ör. Vikipedi, TÜRKPATENT coğrafi işaret kayıtları, haber ve kurum sayfaları) dayanır ve kendi ifademizle yazılmıştır. İşletme listesi etkinlik için hazırlanan kurgusal konseptlerden oluşur. Vikipedi'den alınan bilgiler CC BY-SA lisanslıdır.",
         },
       ],
     },
@@ -139,7 +139,7 @@ const en: LegalDoc = {
             "The hero video, editorial stills on producer and product cards, story and gallery images, and the site mascot (Gakkocan) were generated with generative AI tools or prepared with AI assistance. They are not photographs of a specific business, person or product; they are representative stills.",
             "The chat assistant runs on a generative AI model and its replies are produced automatically ({{page:kullanim-kosullari}}).",
             "AI-assisted development tools were used while building the site's design and software; content and outputs were reviewed by team members.",
-            "Real producer names, addresses and stories are compiled from the team’s Elazığ almond-candy producer guide; they are not invented by AI. Patent, registration and process claims are presented as the firms’ own accounts. Unverified records are labelled “sample content”.",
+            "Business names and stories were created as original fiction for the event and do not represent real people or businesses. Records are labelled “sample content”. No real-company logo, sales link or geographical-indication emblem is used.",
           ],
         },
         {
@@ -219,7 +219,7 @@ const en: LegalDoc = {
       blocks: [
         {
           type: "p",
-          text: "Information in the Discover and story sections is based on the publicly available sources linked in the relevant records (e.g. Wikipedia, TÜRKPATENT geographical indication records, news and institution pages) and is written in our own words. The producer list is compiled from the team’s Elazığ almond-candy producer guide. Information taken from Wikipedia is licensed CC BY-SA.",
+          text: "Information in the Discover and story sections is based on the publicly available sources linked in the relevant records (e.g. Wikipedia, TÜRKPATENT geographical indication records, news and institution pages) and is written in our own words. The business list consists of fictional concepts created for the event. Information taken from Wikipedia is licensed CC BY-SA.",
         },
       ],
     },

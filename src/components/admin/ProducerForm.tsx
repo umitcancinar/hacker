@@ -71,9 +71,10 @@ export function ProducerForm({ row }: { row?: Producer }) {
         defaultValue={linkLines(row?.extraLinks)}
         rows={4}
       />
+      <p className="text-sm text-ink-2">Etkinlik sürümünde yalnızca kurgusal işletmeler yayımlanır. Gerçek firma adı, logo, adres ve satış bağlantısı kullanmayın.</p>
       <div className="flex flex-wrap gap-6">
         <Check name="published" label="Yayında" defaultChecked={row?.published ?? true} />
-        <Check name="demo" label="Örnek içerik" defaultChecked={row?.demo} />
+        <Check name="demo" label="Kurgusal işletme (GakCoding)" defaultChecked={row?.demo ?? true} />
       </div>
       <Actions />
     </form>

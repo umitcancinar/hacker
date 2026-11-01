@@ -61,7 +61,7 @@ const tr: LegalDoc = {
       blocks: [
         {
           type: "p",
-          text: "Sitenin tasarımı, metinleri, görselleri, videosu ve yazılımı ilgili hak sahiplerine aittir veya lisanslıdır. Üçüncü taraf materyaller (müzik, harita verisi, yazı tipleri, açık kaynak kütüphaneler) kendi lisanslarına tabidir; ayrıntılar {{page:yapay-zeka-ve-icerik}} sayfasındadır. Üretici adları ve logoları ilgili üreticilere aittir ve onların izniyle kullanılır. Kişisel, ticari olmayan paylaşımlar dışında içerikleri izinsiz çoğaltamaz, dağıtamaz veya ticari amaçla kullanamazsınız. Bir hakkınızın ihlal edildiğini düşünüyorsanız {{cfg:takedownEmail}} adresine yazın.",
+          text: "Sitenin tasarımı, metinleri, görselleri, videosu ve yazılımı ilgili hak sahiplerine aittir veya lisanslıdır. Üçüncü taraf materyaller (müzik, harita verisi, yazı tipleri, açık kaynak kütüphaneler) kendi lisanslarına tabidir; ayrıntılar {{page:yapay-zeka-ve-icerik}} sayfasındadır. İşletme adları ve işletme hikâyeleri GakCoding için kurgulanmıştır; gerçek kişi veya işletmeleri temsil etmez. Gerçek firma logosu ve coğrafi işaret amblemi kullanılmaz. Kişisel, ticari olmayan paylaşımlar dışında içerikleri izinsiz çoğaltamaz, dağıtamaz veya ticari amaçla kullanamazsınız. Bir hakkınızın ihlal edildiğini düşünüyorsanız {{cfg:takedownEmail}} adresine yazın.",
         },
       ],
     },
@@ -168,7 +168,7 @@ const en: LegalDoc = {
       blocks: [
         {
           type: "p",
-          text: "The site's design, texts, images, video and software belong to, or are licensed by, their rights holders. Third-party materials (music, map data, fonts, open-source libraries) are subject to their own licences; details are in {{page:yapay-zeka-ve-icerik}}. Producer names and logos belong to the producers and are used with their permission. Except for personal, non-commercial sharing, you may not copy, distribute or commercially use the content without permission. If you believe your rights are infringed, write to {{cfg:takedownEmail}}.",
+          text: "The site's design, texts, images, video and software belong to, or are licensed by, their rights holders. Third-party materials (music, map data, fonts, open-source libraries) are subject to their own licences; details are in {{page:yapay-zeka-ve-icerik}}. Business names and stories are fictional GakCoding content and do not represent real people or businesses. No real-company logo or geographical-indication emblem is used. Except for personal, non-commercial sharing, you may not copy, distribute or commercially use the content without permission. If you believe your rights are infringed, write to {{cfg:takedownEmail}}.",
         },
       ],
     },

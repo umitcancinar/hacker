@@ -30,7 +30,7 @@
   },
   "hero": {
     "title": "From almond to sweet, from Elazığ to your table.",
-    "lead": "Meet Elazığ's almond candy, together with the hands that make it.",
+    "lead": "Discover Elazığ’s almond candy, its serving traditions and workshop stories imagined for this project.",
     "ctaStory": "Discover the story",
     "ctaProducers": "Meet the producers",
     "videoLabel": "A film showing women in Elazığ picking almonds and making almond candy",
@@ -43,7 +43,7 @@
   },
   "producersTeaser": {
     "title": "The hands behind the candy",
-    "body": "Find the businesses that make and sell almond candy in Elazığ, with their stories and addresses in one place.",
+    "body": "Explore fictional businesses and illustrative product presentations designed around Elazığ’s serving traditions.",
     "cta": "All producers",
     "demoBadge": "Sample content"
   },
@@ -64,7 +64,7 @@
   "footer": {
     "builtBy": "Built by team Gacker for GakCoding.",
     "event": "GakCoding · 1 November 2026 · Elazığ",
-    "rights": "Producer records are compiled from the team guide; confirm before you visit. Editorial stills are not photographs of the businesses.",
+    "rights": "Product and business images are illustrative, not photographs of a real business.",
     "musicCredit": "Music",
     "explore": "Explore",
     "contact": "Contact"
@@ -76,7 +76,7 @@
     },
     "producers": {
       "title": "Producers",
-      "lead": "From the covered bazaar to the cooperative, the hands that make the candy."
+      "lead": "Eight fictional business stories inspired by Elazığ’s serving traditions and created for this project."
     },
     "discover": {
       "title": "Discover Elazığ",
@@ -88,7 +88,7 @@
     },
     "request": {
       "title": "Get listed as a producer",
-      "lead": "If you make or sell almond candy, fill in the form. You appear on the list after we verify the record.",
+      "lead": "Share a business concept or content suggestion for this demonstration. Requests are reviewed by the administrator and are not published automatically.",
       "name": "Business name",
       "senderName": "Your name",
       "email": "Email",
@@ -100,7 +100,7 @@
       "hours": "Opening hours",
       "notes": "Notes or photo links",
       "submit": "Send request",
-      "success": "We received your request. It will appear on the list after verification.",
+      "success": "Your suggestion has been received for review. It is not published automatically.",
       "messageTitle": "Write to us",
       "message": "Your message",
       "messageSubmit": "Send message",

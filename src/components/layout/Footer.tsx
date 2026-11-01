@@ -7,6 +7,7 @@ import { FooterMap } from "@/components/layout/FooterMap";
 import { FolkDance } from "@/components/folk/FolkDance";
 import { legalNavLabels, legalSlugs, legalUi } from "@/content/legal";
 import { NoticePreferencesButton } from "@/components/legal/NoticePreferencesButton";
+import { projectNotice } from "@/content/project-notice";
 
 export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const links = [
@@ -64,6 +65,9 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           />
         </nav>
         <p className="container-x py-4 text-sm text-ink-2">{dict.footer.rights}</p>
+        <p className="container-x pb-6 text-sm leading-relaxed text-ink-2" data-project-notice>
+          {projectNotice[lang]}
+        </p>
       </div>
     </footer>
   );

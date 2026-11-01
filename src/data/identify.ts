@@ -9,48 +9,14 @@ export type IdentifyItem = {
 };
 
 /**
- * Orijinal Elazığ badem şekerini ayırt etme ölçütleri.
- * Kaynak: takım rehberi `src/data/guides/elazig_badem_sekeri_rehberi.md`.
+ * Genel ürün okuryazarlığı; kalite, köken veya sağlık garantisi verilmez.
  */
-export const identifyCopy: Record<
-  Locale,
-  { title: string; lead: string; source: string }
-> = {
-  tr: {
-    title: "Hakiki Elazığ badem şekerini nasıl ayırt edersiniz?",
-    lead: "Kalın drajeden ayıran üç işaret. Rehberin ölçütleri; her tezgâhın şekeri birbirinin aynısı değildir.",
-    source: "Gacker takımı — Elazığ Badem Şekeri Üretici Rehberi",
-  },
-  en: {
-    title: "How to tell genuine Elazığ almond candy",
-    lead: "Three marks that set it apart from a thick dragée. These are the guide’s tests; no two stalls taste the same.",
-    source: "Team Gacker — Elazığ almond candy producer guide",
-  },
+export const identifyCopy: Record<Locale, { title: string; lead: string; source: string }> = {
+  tr: { title: "Bir badem şekerini seçerken", lead: "Kaplama, malzeme ve etiket üzerine üç soru. Bunlar bir tescil ya da özgünlük testi değildir; reçeteler ürüne göre değişir.", source: "Gacker · Ürünü tanıma notları" },
+  en: { title: "When choosing almond candy", lead: "Three questions about coating, ingredients and labelling. These are not registration or authenticity tests; recipes vary between products.", source: "Gacker · Getting to know the product" },
 };
-
 export const identifyItems: IdentifyItem[] = [
-  {
-    id: "zar",
-    title: { tr: "Zar gibi ince kabuk", en: "A shell as thin as frost" },
-    body: {
-      tr: "Fabrikasyon drajede şeker tabakası sert ve kalın olup dişe batabilir. Hakiki Elazığ badem şekerinde kabuk, bademin üzerini kar örtüsü gibi saran incecik, çıtır bir zardır; ağızda kolayca erir.",
-      en: "On factory dragées the sugar can be hard and thick enough to jar the tooth. On a true Elazığ candy the coat is a thin, crisp film — frost on the almond — and it melts in the mouth.",
-    },
-  },
-  {
-    id: "badem",
-    title: { tr: "Yerli Fırat havzası bademi", en: "Local Fırat-basin almonds" },
-    body: {
-      tr: "İthal bademler dolgun görünse de kuru kalabilir. Elazığ badem şekerinde Elazığ, Tunceli ve Fırat vadisinde yetişen aromatik, yağlı yerli bademler tercih edilir.",
-      en: "Imported almonds can look plump and still taste dry. Elazığ candy prefers aromatic, oily local nuts from Elazığ, Tunceli and the Fırat valley.",
-    },
-  },
-  {
-    id: "pancar",
-    title: { tr: "Pancar şekeri, glikoz değil", en: "Beet sugar, not glucose" },
-    body: {
-      tr: "Kaliteli üreticiler glikoz şurubu kullanmaz; kaplama kristal pancar şekeri şerbetiyle yapılır. Bu, boğazı yakmayan ferah bir tatlılık verir.",
-      en: "Careful makers skip glucose syrup and coat with crystal beet-sugar syrup. The sweetness is clean and does not burn the throat.",
-    },
-  },
+  { id: "zar", title: { tr: "Kaplamanın dokusu", en: "The coating’s texture" }, body: { tr: "Elazığ üzerine üretim haberlerinde ince, gevrek şeker kaplaması anlatılır. Kaplamanın kalınlığı ve dokusu reçeteye göre değişebilir; görünüş tek başına köken veya kalite belgesi sayılmaz.", en: "Reports on production in Elazığ describe a thin, crisp sugar coating. Thickness and texture vary with the recipe; appearance alone does not certify origin or quality." } },
+  { id: "badem", title: { tr: "Bademin kaynağı", en: "The almond’s source" }, body: { tr: "Bademin çeşidi ve yetiştiği yer hakkında etiket veya üretici açıklamasına bakın. Yerli ya da ithal olmasından tek başına bir kalite sonucu çıkarılamaz; bütün ürünlerin aynı bademi kullandığı varsayılmaz.", en: "Check the label or producer’s information for the almond variety and source. Local or imported origin alone does not establish quality, and different products may use different almonds." } },
+  { id: "pancar", title: { tr: "İçindekiler ve alerjenler", en: "Ingredients and allergens" }, body: { tr: "Şeker türü, aroma ve diğer bileşenler ürüne göre değişir. İçindekiler listesini ve badem dahil sert kabuklu meyve alerjenlerini kontrol edin. Pancar şekeri veya başka bir şeker türü kullanılması sağlık yararı ya da tescil anlamına gelmez.", en: "Sugar type, flavourings and other ingredients vary. Check the ingredient list and tree-nut allergens, including almond. Using beet sugar or another sugar does not imply a health benefit or registered status." } },
 ];

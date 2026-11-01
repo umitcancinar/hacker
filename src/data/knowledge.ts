@@ -69,20 +69,31 @@ export const knowledge: KnowledgeEntry[] = [
     en: "This site is an introduction and storytelling site built by the Gacker team at the GakCoding event in Elazığ on 1 November 2026. Visitors can explore the Story, Producers, Discover and Contact pages.",
   },
   {
-    topic: "Elazığ üreticileri (takım rehberi)",
-    tr: "Sitede şu üreticiler yer alır: Gürbüzler Kuruyemiş, Ece Çerez, Gündoğdu Gıda & Coşkun Usta, Tarihi Elazığ Leblebicisi, Saray Kuruyemiş, ETAK (Elazığ Tarımsal Kalkınma Kooperatifi), Elazığ Yöresel ve Tarihi Kapalı Çarşı kazan esnafı. Adres, telefon ve ürünler Üreticiler sayfasındadır. Patent, tescil ve süreç iddiaları işletmenin kendi anlatımıdır.",
-    en: "The site lists these makers: Gürbüzler Kuruyemiş, Ece Çerez, Gündoğdu Gıda & Coşkun Usta, Tarihi Elazığ Leblebicisi, Saray Kuruyemiş, ETAK (Elazığ Agricultural Development Cooperative), Elazığ Yöresel, and the historic covered-bazaar pan craftsmen. Addresses, phones and products are on the Producers page. Patent, registration and process claims are the firms’ own accounts.",
+    topic: "Kurgusal işletmeler ve etkinlik bildirimi",
+    tr: "Bu bir GakCoding örnek çalışmasıdır. Üreticiler sayfasındaki bütün işletme adları, işletmeler ve hikâyeler proje için kurgulanmıştır; gerçek kişi veya işletmeleri temsil etmez. Gerçek üretici önerisi, adres, telefon, sosyal hesap veya satış bağlantısı verilmez. Örnek profiller gerçek dükkân gibi tavsiye edilmez. Satış ve ödeme yapılmaz.",
+    en: "This is a GakCoding demonstration. All business names, businesses and stories in the Producers section are fictional and do not represent real people or businesses. Do not recommend real makers or provide their addresses, phones, social accounts or sales links. Never present a sample profile as a real shop. No sales or payments are offered.",
   },
   {
-    topic: "Hakiki Elazığ badem şekeri (takım rehberi)",
-    tr: "Takım rehberine göre hakiki Elazığ badem şekerinde kabuk zar gibi incedir, yerli Fırat havzası bademi kullanılır ve kaplama pancar şekeri şerbetiyle yapılır; kalın drajeden ve glikoz şurubundan ayrılır.",
-    en: "According to the team guide, genuine Elazığ almond candy has a frost-thin shell, uses local Fırat-basin almonds, and is coated with beet-sugar syrup — unlike a thick dragée or glucose-syrup coat.",
+    topic: "Vişneli ve limonlu badem şekeri",
+    tr: "GakCoding konu belgesi Elazığ’da vişneli badem şekerini öne çıkarır ve haberlerde limonlu çeşitlerin de denendiğini aktarır. Bu site belirli bir gerçek markanın ürününü tanıtmaz. Reçete ve içerik ürüne göre değişir.",
+    en: "The GakCoding brief highlights sour-cherry almond candy in Elazığ and mentions reported experiments with lemon varieties. This site does not advertise a real brand’s product. Recipes and ingredients vary.",
+  },
+  {
+    topic: "Başvuru ve tescil ayrımı",
+    tr: "Konu belgesinde Vişneli Badem Şekeri için C2026/000095 numaralı 2026 başvurusu belirtilir; bu bir tescil veya patent kanıtı değildir. Güncel statü TÜRKPATENT’ten kontrol edilmelidir. Coğrafi işaret amblemi ve tescilli ürün iddiası kullanılmaz.",
+    en: "The brief cites the 2026 application C2026/000095 for sour-cherry almond candy. This does not prove registration or a patent. Check TÜRKPATENT for current status. No geographical-indication emblem or registered-product claim is used.",
+  },
+  {
+    topic: "Ürün seçimi ve içerik",
+    tr: "Kaplama, badem kaynağı ve şeker türü reçeteye göre değişebilir. İthal veya yerli bademden tek başına kalite sonucu çıkarılmaz; pancar şekeri kullanımı sağlık garantisi değildir. Gerçek bir ürün için etiketteki içerik ve alerjen bilgisi esas alınır.",
+    en: "Coating, almond source and sugar type may vary by recipe. Local or imported origin alone does not determine quality; beet sugar does not guarantee a health benefit. For a real product, rely on its ingredient and allergen label.",
   },
   {
     topic: "Yapay zekâ asistanı",
-    tr: "Bu asistan bir yapay zekâ modelidir ve yanılabilir. Doğrulanmış üretici bilgilerini sitenin Üreticiler sayfasında bulabilirsiniz.",
-    en: "This assistant is an AI model and can be wrong. Verified producer information can be found on the site's Producers page.",
+    tr: "Gakkocan yapay zekâ ile yanıt üreten kurgusal bir karakterdir ve yanılabilir. Projedeki işletmeler de kurgusaldır; gerçek işletme veya sağlık tavsiyesi sunmaz.",
+    en: "Gakkocan is a fictional AI-powered character and may be wrong. The project’s businesses are also fictional; it does not provide real-business or health recommendations.",
   },
+
 ];
 
 /**

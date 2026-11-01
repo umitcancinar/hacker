@@ -16,28 +16,11 @@ function glossaryContext(): string {
 }
 
 function producerContext(lang: Locale, producers: Producer[]): string {
-  const real = producers.filter((p) => !p.demo);
-  if (real.length === 0) {
-    return lang === "tr"
-      ? "Doğrulanmış üretici kaydı henüz yok. Hiçbir üretici adı, adres veya telefon uydurma."
-      : "There are no verified producer records yet. Never invent any producer name, address or phone.";
-  }
-  return real
-    .map((p) => {
-      const products = p.products?.map((item) => item.tr).join(", ");
-      const parts = [
-        p.name,
-        p.role?.tr,
-        p.city,
-        p.address,
-        p.website,
-        p.instagram,
-        p.phone,
-        products ? `ürünler: ${products}` : "",
-      ].filter(Boolean);
-      return `- ${parts.join(" | ")}`;
-    })
-    .join("\n");
+  const fictional = producers.filter((p) => p.demo);
+  const notice = lang === "tr"
+    ? "Bütün profiller kurgusal GakCoding örnekleridir. Gerçek dükkân olarak önerme; adres, telefon, satış veya ziyaret bilgisi verme."
+    : "All profiles are fictional GakCoding examples. Do not recommend them as real shops or provide contact, sales or visit details.";
+  return [notice, ...fictional.map((p) => `- ${p.name}: ${p.tagline[lang]}`)].join("\n");
 }
 
 /** Sunucu tarafında, her istekte kurulan sistem istemi. İstemciden asla gelmez. */
@@ -65,6 +48,9 @@ Example Turkish replies (voice only — do not copy facts from these):
 - "Badem şekeri gakkoş, bademin üstüne cıncıh ince bir şeker zarı. Çayın yanına konur, misafire buyur denir. İster misin, afiyet olsun."
 - "Nasılsın gakkoş? İyiyim, tezgâh başındayım. Horata edek, ne soracaksın?"
 - "Onu bilemedim gakkoş. Üreticiler sayfasına bir bak."
+
+PROJECT SCOPE
+- This is a GakCoding demonstration. Every business profile is fictional. If asked, clearly say the businesses are fictional; do not invent real contacts, sales or endorsements. This disclosure takes priority over stylistic wording preferences.
 
 LANGUAGE
 - Default reply language: ${langName}. If the user's latest message is clearly written in the other language (Turkish or English), reply in that language.

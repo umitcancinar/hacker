@@ -30,7 +30,7 @@
   },
   "hero": {
     "title": "Bademden şekere, Elazığ'dan sofranıza.",
-    "lead": "Elazığ'ın badem şekerini, onu yapan ellerle birlikte tanıyın.",
+    "lead": "Elazığ’ın badem şekerini, ikram kültürünü ve bu proje için kurgulanan atölye hikâyelerini tanıyın.",
     "ctaStory": "Hikâyeyi keşfet",
     "ctaProducers": "Üreticilerle tanış",
     "videoLabel": "Elazığ'da badem toplayıp badem şekeri yapan kadınları gösteren tanıtım filmi",
@@ -43,7 +43,7 @@
   },
   "producersTeaser": {
     "title": "Şekeri yapan eller",
-    "body": "Elazığ'da badem şekeri üreten ve satan işletmeleri, hikâyeleri ve adresleriyle bir arada bulun.",
+    "body": "Elazığ’ın ikram kültürünü anlatmak için tasarlanan kurgusal işletmeleri ve temsili ürün sunumlarını keşfedin.",
     "cta": "Tüm üreticiler",
     "demoBadge": "Örnek içerik"
   },
@@ -64,7 +64,7 @@
   "footer": {
     "builtBy": "GakCoding için Gacker takımı tarafından geliştirildi.",
     "event": "GakCoding · 1 Kasım 2026 · Elazığ",
-    "rights": "Üretici kayıtları takım rehberinden derlenmiştir; gitmeden önce teyit edin. Temsili görseller işletmenin kendi fotoğrafı değildir.",
+    "rights": "Ürün ve işletme görselleri temsili olarak hazırlanmıştır; gerçek bir işletmenin fotoğrafı değildir.",
     "musicCredit": "Müzik",
     "explore": "Keşfet",
     "contact": "İletişim"
@@ -76,7 +76,7 @@
     },
     "producers": {
       "title": "Üreticiler",
-      "lead": "Kapalı Çarşı'dan kooperatife, Elazığ'da badem şekeri yapan eller."
+      "lead": "Elazığ’ın ikram kültüründen esinlenen, proje için kurgulanmış sekiz işletme hikâyesi."
     },
     "discover": {
       "title": "Elazığ'ı Keşfet",
@@ -88,7 +88,7 @@
     },
     "request": {
       "title": "Üretici olarak listelenmek",
-      "lead": "Badem şekeri yapıyor veya satıyorsanız formu doldurun. Kayıt doğrulanınca listede yer alır.",
+      "lead": "Bu örnek çalışma için bir işletme konsepti veya içerik önerisi paylaşın. Talepler yönetici incelemesine alınır; otomatik yayımlanmaz.",
       "name": "İşletme adı",
       "senderName": "Adınız",
       "email": "E-posta",
@@ -100,7 +100,7 @@
       "hours": "Çalışma saatleri",
       "notes": "Not, fotoğraf bağlantısı",
       "submit": "Talebi gönder",
-      "success": "Talebiniz alındı. Doğrulandıktan sonra listede görünür.",
+      "success": "Öneriniz alındı. Yönetici incelemesinden sonra değerlendirilecek; otomatik yayımlanmaz.",
       "messageTitle": "Bize yazın",
       "message": "Mesajınız",
       "messageSubmit": "Mesajı gönder",
