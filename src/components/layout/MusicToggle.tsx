@@ -8,7 +8,8 @@ const SRC = "/audio/harput-zurna.mp3";
 
 /**
  * Arka plan müziği. Tarayıcılar kullanıcı etkileşimi olmadan sesi engeller,
- * bu yüzden varsayılan kapalıdır; kullanıcı açarsa tercih hatırlanır.
+ * Varsayılan açıktır; otomatik oynatma engellenirse ilk etkileşimde başlar.
+ * Kullanıcının kapatma tercihi sonraki ziyaretlerde de korunur.
  */
 export function MusicToggle({
   labels,
@@ -18,38 +19,66 @@ export function MusicToggle({
   className?: string;
 }) {
   const audio = useRef<HTMLAudioElement | null>(null);
-  const [playing, setPlaying] = useState(false);
+  const enabled = useRef(true);
+  const [playing, setPlaying] = useState(true);
   const [available, setAvailable] = useState(true);
 
   useEffect(() => {
+    let disposed = false;
     const el = new Audio(SRC);
     el.loop = true;
     el.volume = 0.35;
     el.preload = "none";
     el.addEventListener("error", () => setAvailable(false));
     audio.current = el;
+    let wanted = true;
+    try {
+      wanted = localStorage.getItem(KEY) !== "off";
+    } catch {
+      // Depolama kapalı olsa da müzik düğmesi çalışır.
+    }
+    enabled.current = wanted;
+    setPlaying(wanted);
+    const start = () => {
+      if (disposed || !enabled.current) return;
+      void el.play().then(() => {
+        if (disposed || !enabled.current) el.pause();
+      }).catch(() => {
+        // Tarayıcının ses izni için bir sonraki etkileşimi bekle.
+      });
+    };
+    const onInteraction = (event: Event) => {
+      if (event.target instanceof Element && event.target.closest("[data-music-toggle]")) return;
+      if (el.paused) start();
+    };
+    if (wanted) start();
+    document.addEventListener("pointerdown", onInteraction);
+    document.addEventListener("keydown", onInteraction);
     return () => {
+      disposed = true;
+      enabled.current = false;
+      document.removeEventListener("pointerdown", onInteraction);
+      document.removeEventListener("keydown", onInteraction);
       el.pause();
       audio.current = null;
     };
   }, []);
 
-  const toggle = async () => {
+  const toggle = () => {
     const el = audio.current;
     if (!el) return;
-    if (playing) {
-      el.pause();
-      setPlaying(false);
-      localStorage.setItem(KEY, "off");
-      return;
-    }
+    const next = !enabled.current;
+    enabled.current = next;
+    setPlaying(next);
     try {
-      await el.play();
-      setPlaying(true);
-      localStorage.setItem(KEY, "on");
+      localStorage.setItem(KEY, next ? "on" : "off");
     } catch {
-      setPlaying(false);
+      // Depolama kullanılamasa da açık/kapalı seçimi bu oturumda korunur.
     }
+    if (!next) el.pause();
+    else void el.play().then(() => {
+      if (!enabled.current) el.pause();
+    }).catch(() => {});
   };
 
   if (!available) return null;
@@ -58,6 +87,7 @@ export function MusicToggle({
   return (
     <button
       type="button"
+      data-music-toggle
       onClick={toggle}
       aria-pressed={playing}
       aria-label={playing ? labels.off : labels.on}
