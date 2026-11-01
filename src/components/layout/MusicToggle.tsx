@@ -27,7 +27,7 @@ export function MusicToggle({
     let disposed = false;
     const el = new Audio(SRC);
     el.loop = true;
-    el.volume = 0.35;
+    el.volume = 1;
     el.preload = "none";
     el.addEventListener("error", () => setAvailable(false));
     audio.current = el;
